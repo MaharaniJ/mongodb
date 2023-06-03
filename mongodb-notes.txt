@@ -1,0 +1,74 @@
+What is mongodb?
+mongodb is a popular open source,NoSQL databasethat stores data in a document-oriented database format.
+Unlike traditional relational databases,which store data in tables.
+mongodb stores data as JSON-like documents,making it more flexible and scalable.
+the name "MongoDB" is derived from the word "humongous"
+BSON(binary script object notation) documents are the format used for data stored in mongodb.they managed json as BSON
+
+History of mongodb:
+Mongodb is a NOSQL database that was developed by 10gen, a company that founded by Dwight Merriman and Eliot Horowitz in 2007.
+The first version of the mongodb was released in 2009, and it quickly gained popularity among other developers due to its ease of use, scalability and flexibility
+in 2013, 10gen chaged its name to Mongodb inc.to better reflect its focus on the development of the mongodb database.
+in 2017, mongodb inc. went public and the company has continued to grow abd expand its offerings. including the introduction of a cloud-base databse service called mongodb atlas.
+Today,Monogdb is used by a wide tange of companies and organizations.
+
+
+JSON Data format:
+{
+    "name":"maha",
+    "age":25,
+    "gender":"female",
+    "address":{
+        "street":"south street",
+        "city":"tenkasi",
+        "state":"tamilnadu"
+    }
+}
+
+how mongodb works?
+it has a collections each collection has a individula key value pairs which is called documents
+schemaless
+
+Structure of mongob & sql
+it has a collections ,documents(BSON),fields
+
+mongodb features:
+Aggregation is a powerful feature in mongodb that allows you to process and abalyze data across multipe documents in a collections. 
+it enablesyou to proform complex data manipulates,transformations and calculations on large datasets
+input->match->group->sort->output
+
+Mognodb is a schemaless database, which means that it does not require a pre-definded schema or structure for the data.
+unlike traditional relational databse, where data is stored in tables with pre defined columns and relationships between tables,mongodb stores data in flexible and dynamic documents.
+
+document-oriented:
+mongodb is docu,ent-oriented this means that data is stored in the form of documents, which are similar to JSON(javascript object notation) objects, instead of being stored intable with fixe columns and rows like in a traditional relational database. 
+
+Each document has unique system generated key.
+
+Data-sharding:
+it allows mongodb to handle large datasets and high traffic loads while maintaining high performance and scalability.
+Sharding is a type of database portioning that separates very large databases into smaller faster more easily managed part called data shards.
+
+Indexing:
+indexing is one of the important option to improve the search performances. so we should index those fields which are matched with our searching criteria.
+High performance and scalability:
+mongodb shows high availability and scalability performance. it has better query response for indexing ang replication.
+
+Replication:
+A replica set in mongodb consists of one primary node and one or more secondary nodes, which replicate the data from the primary node. 
+the primary node is tesponsible for handling write operations, while the secondary nodes replicate the data from the primary node and can handleread operations.if the primary node fails, one of the secondary nodes is elected as the new primary node.
+
+after installed , goto command panel type service.msc >runnign
+configure the environmentvariable>configure the environment bin path in mongodb
+or  configure in another way in command
+go to the cmd and type mongosh --v or mongosh --help
+show dbs 
+admin
+config
+local these are the default dbs
+use dbname
+create record:
+db.collectionname.insertOne({
+    "name": "maha",
+})
+db.collectionname.find()
