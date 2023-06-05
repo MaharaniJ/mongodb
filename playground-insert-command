@@ -1,0 +1,16 @@
+use("schoole")
+/*
+db.students.find()
+db.students.find({name:"maha"})
+db.getMongo().getDBs()
+db.getCollectionNames()
+db.students.insertMany([
+    {"_id":3,"name":"Ramesh"},
+    {"_id":4,"name":"diya","age":5},
+    {"name":"Sri","age":14}
+])
+db.students.find({},{"name":1})
+db.students.find({},{"_id":0,"name":1})
+db.students.find({},{"_id":0,"name":1,"age":1})
+*/
+
